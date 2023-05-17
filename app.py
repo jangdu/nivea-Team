@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 client = MongoClient('mongodb+srv://sparta:test@sparta.mw5zmbb.mongodb.net/?retryWrites=true&w=majority')
 
-db = client.dbsprata
+db = client.dbsparta
 
 @app.route('/')
 def home():
@@ -39,9 +39,24 @@ def guestbook_get():
     all_fan = list(db.fanm.find({}, {'_id':False}))
     return jsonify({'result': all_fan})
 
+@app.route('/guestbook', methods=['DELETE'])
+def guestbook_delete():
+
+    
+    all_fan = list(db.fanm.find({}, {'_id':False}))
+    return jsonify({'result': all_fan})
+
+
 @app.route('/detail')
 def detail():
-    return render_template('detail.html')
+    query = request.args.get('query')
+    print(query)
+
+    a = list(db.info.find({'name':query}, {'_id':False}))
+
+    print(a)
+
+    return render_template('detail.html', info=a)
 
 
 if __name__ == '__main__':

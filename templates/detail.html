@@ -25,22 +25,22 @@
     <div class="container" style="width: 80vw; min-width: 700px; max-width: 1024px; margin: 5rem auto">
       <div class="row">
         <div class="col-4" style="min-width: 150px">
-          <img src="https://res.cloudinary.com/dyhnnmhcf/image/upload/v1681745025/profileImage_ny0a9b.jpg" class="img-fluid rounded-start card-body p-2" alt="..." style="width: 300px" />
+          <img src="{{info[0].image}}" alt="..." style="width: 300px" />
         </div>
         <div class="col-8" style="margin: auto">
           <div class="input-group" style="width: 500px; margin: auto">
             <div class="fs-3 fw-bold mb-4">계기</div>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <p class="card-text">{{info[0].reason}}</p>
           </div>
         </div>
       </div>
       <div class="row p-4">
         <div class="col-4 p-2" style="margin: auto">
           <div class="row" style="font-weight: bold">
-            <div class="mb-2"><h3>장두혁</h3></div>
-            <p class="card-text">mbti: entp</p>
+            <div class="mb-2"><h3>{{info[0].name}}</h3></div>
+            <p class="card-text">mbti: {{info[0].MBTI}}</p>
             <span style="margin-bottom: 0">성격</span>
-            <span>Some quick example text to build on the</span>
+            <span>{{info[0].strength}}</span>
           </div>
         </div>
         <div class="col-8 mt-8 flex-col" style="margin: auto">
@@ -67,7 +67,6 @@
         </div>
       </div>
     </div>
-
     <div class="mypost">
       <div class="input-group">
         <input required id="group" placeholder="-팀명을 입력하세요-" type="text" />

@@ -25,34 +25,19 @@
       <!-- 날짜 / 날씨 공간 -->
     </header>
 
-    <!-- visual part -->
-    <section id="mainVisual">
-      <div class="visuBox">
-        <img src="{{ url_for('static', filename='/img/NIVEA_logo_2021.svg') }}" alt="nivea" />
-        <ul class="visu">
-          <li>1. Team.NIVEA 이란..?</li>
-          <li>2. Team.NIVEA의 약속 : </li>
-          <li>3. Team.NIVEA 규칙 : </li>
-        </ul>
-      </div>
-    </section>
-
     <!-- main -->
     <main id="container" class="main">
-
       <div class="top">
         <div class="card c1">
-          <img src="https://ca.slack-edge.com/T043597JK8V-U055KTAULS2-604b89ef95eb-512" class="card-img-top" alt="jh">
+          <img src="https://ca.slack-edge.com/T043597JK8V-U055KTAULS2-604b89ef95eb-512" class="card-img-top" alt="jh" />
           <div class="card-body">
-            <a href="#">
-              <h5 class="card-title">김재혁 / 앞서나가되 기본에 충실하자! </h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">나는 누구일까..??</a>
-            </a>
+            <h5 class="card-title">김재혁 / 앞서나가되 기본에 충실하자!</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="btn btn-primary">나는 누구일까..??</a>
           </div>
         </div>
         <div class="card c2">
-          <img src="https://ca.slack-edge.com/T043597JK8V-U056JF99DKJ-676687d724d8-48" class="card-img-top" alt="bi">
+          <img src="https://ca.slack-edge.com/T043597JK8V-U056JF99DKJ-676687d724d8-48" class="card-img-top" alt="bi" />
           <div class="card-body">
             <h5 class="card-title">배병일 / 서로 도와가면서잘하자</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -60,7 +45,7 @@
           </div>
         </div>
         <div class="card c3">
-          <img src="https://res.cloudinary.com/dyhnnmhcf/image/upload/v1681745025/profileImage_ny0a9b.jpg" class="card-img-top" alt="dh">
+          <img src="https://res.cloudinary.com/dyhnnmhcf/image/upload/v1681745025/profileImage_ny0a9b.jpg" class="card-img-top" alt="dh" />
           <div class="card-body">
             <h5 class="card-title">장두혁 / 다 같이 발전하자!</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -68,10 +53,11 @@
           </div>
         </div>
       </div>
+      <a href="../detail?query={{info[0].name}}" class="btn btn-primary">나는 누구일까..??</a>
 
       <div class="bottom">
         <div class="card c4">
-          <img src="https://ca.slack-edge.com/T043597JK8V-U052RS66N4C-de4e3d968e31-512" class="card-img-top" alt="js">
+          <img src="https://ca.slack-edge.com/T043597JK8V-U052RS66N4C-de4e3d968e31-512" class="card-img-top" alt="js" />
           <div class="card-body">
             <h5 class="card-title">오준석 / 같이 열심히 많이 배우면 좋겠습니다!</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -79,7 +65,7 @@
           </div>
         </div>
         <div class="card c5">
-          <img src="https://ca.slack-edge.com/T043597JK8V-U054YB2HEPL-ebccd1544fbc-512" class="card-img-top" alt="yj">
+          <img src="https://ca.slack-edge.com/T043597JK8V-U054YB2HEPL-ebccd1544fbc-512" class="card-img-top" alt="yj" />
           <div class="card-body">
             <h5 class="card-title">조윤주 / 서로 이끌면서 포기하지말자!</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -87,16 +73,12 @@
           </div>
         </div>
       </div>
-
     </main>
 
     <!-- footer -->
     <footer id="footer">
       <p>design by Team.NIVEA</p>
     </footer>
-    
-    
-
 
     <!-- script part -->
     <script src="{{ url_for('static', filename='/js/main.js') }}" defer></script>
